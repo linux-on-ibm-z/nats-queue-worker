@@ -1,12 +1,16 @@
-os: linux
-arch: s390x
 sudo: required
 
 language: go
 
 go:
   - 1.9.x
-  
+
+matrix:
+  include:
+  - os: linux
+  - os: linux
+    arch: s390x
+    
 services:
   - docker
 
