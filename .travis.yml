@@ -10,7 +10,11 @@ matrix:
   - os: linux
   - os: linux
     arch: s390x
-    
+
+branches:
+  only:
+  - travis-s390x
+      
 services:
   - docker
 
