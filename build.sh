@@ -8,4 +8,4 @@ fi
 
 echo Building openfaas/queue-worker:$eTAG
 
-docker build --build-arg http_proxy=$http_proxy -t openfaas/queue-worker:$eTAG -f Dockerfile.s390x
+docker build --build-arg http_proxy=$http_proxy -t openfaas/queue-worker:$eTAG -f Dockerfile.s390x .
