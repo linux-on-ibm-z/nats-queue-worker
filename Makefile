@@ -35,3 +35,10 @@ ci-ppc64le-build:
 ci-ppc64le-push:
 	docker push openfaas/queue-worker:$(TAG)-ppc64le
 
+.PHONY: ci-s390x-build
+ci-s390x-build:
+	docker build --build-arg http_proxy="${http_proxy}" --build-arg https_proxy="${https_proxy}" -t openfaas/queue-worker:$(TAG)-s390x . -f Dockerfile.s390x
+
+.PHONY: ci-s390x-push
+ci-s390x-push:
+	docker push openfaas/queue-worker:$(TAG)-s390x
