@@ -5,7 +5,7 @@ language: go
 go:
   - 1.9.x
 
-matrix:
+jobs:
   include:
   - os: linux
   - os: linux
